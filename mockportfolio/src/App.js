@@ -5,6 +5,7 @@ import Home from "./pages/Home.js";
 import Projects from "./pages/Projects.js";
 import Experience from "./pages/Experience.js";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
