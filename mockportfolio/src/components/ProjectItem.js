@@ -1,7 +1,12 @@
 import React from "react";
 
-function ProjectItem() {
-  return <div>ProjectItem</div>;
+function ProjectItem({ image, name }) {
+  return (
+    <div className="projectItem">
+      <div style={{ backgroundImage: `url(${image})` }} className="bgIMage" />
+      <h1>{name}</h1>
+    </div>
+  );
 }
 
 export default ProjectItem;
