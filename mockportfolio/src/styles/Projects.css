@@ -74,7 +74,7 @@ projectTitle {
 .modal-header {
   padding: 10px 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-betflex-endween;
   align-items: center;
   border-bottom: 1px solid black;
 }
@@ -97,6 +97,14 @@ projectTitle {
   align-items: center;
 }
 
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .model-header .close-button {
   cursor: pointer;
   border: none;
@@ -106,13 +114,15 @@ projectTitle {
   font-weight: bold;
 }
 
-.modal-body {
-  padding: 10px 15px;
+.modal-content {
+  padding: 50px;
+  font-size: 1.25rem;
 }
 
 #overlay {
   position: fixed;
-  /* opacity: 0; */
+  opacity: 0;
+  transition: 200ms ease-in-out;
   top: 0;
   left: 0;
   right: 0;
