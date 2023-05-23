@@ -18,7 +18,9 @@ function ProjectItem({ image, name, onClick }) {
     <div className="projectItem">
       <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
       <h1>{name}</h1>
-      <button onClick={onClick}>View Details</button>
+      <button className="button-18" onClick={onClick}>
+        View Details
+      </button>
     </div>
   );
 }
